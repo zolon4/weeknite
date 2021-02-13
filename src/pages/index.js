@@ -20,13 +20,14 @@ const IndexPage = ({
     return (
       <Link
         to={data.path}
-        className="mb-6 block"
+        className="mb-12 block"
         onMouseOver={() => setFeaturedImage(data.image.publicURL)}
         onMouseLeave={() => setFeaturedImage(ChipsImage)}
       >
-        <h2 className="text-3xl font-heading mb-2">{data.title}</h2>
+        <img src={data.image.publicURL} className="mb-2" />
+        <h2 className="text-3xl mb-2 underline">{data.title}</h2>
         <p className="font-thin">{data.date}</p>
-        <p className="w-full md:w-1/2">{data.ingredients}</p>
+        <p className="w-full italic">{data.ingredients}</p>
       </Link>
     )
   })
@@ -34,10 +35,10 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="flex flex-col flex-col-reverse md:grid md:grid-cols-2 md:flex-grow pt-8">
-        <div className="h-full overflow-scroll">{recipes}</div>
-        <div className="w-full flex flex-col row-span-1">
-          <img src={featuredImage} className="w-full object-contain" />
+      <div className="grid grid-cols-2 h-full overflow-hidden">
+        <div className="overflow-scroll p-8">{recipes}</div>
+        <div className="border-l border-black h-full flex flex-col justify-center p-8 max-h-full">
+          <img src={featuredImage} />
         </div>
       </div>
     </Layout>

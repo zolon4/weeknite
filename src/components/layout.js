@@ -25,7 +25,9 @@ const Layout = ({ children }) => {
   return (
     <div className="h-screen w-screen bg-whiteish flex flex-col">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main className="p-8 flex-grow flex flex-col pt-24">{children}</main>
+      <main className="flex-grow flex flex-col pt-20 overflow-hidden">
+        {children}
+      </main>
     </div>
   )
 }

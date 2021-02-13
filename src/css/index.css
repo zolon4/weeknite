@@ -13,6 +13,11 @@
   src: url("../fonts/ZapfHumanist601BT-Roman.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Couch";
+  src: url("../fonts/Couch-Regular.woff2") format("woff2");
+}
+
 html,
 body {
   @apply font-body text-blackish;

@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         body: ["manrope-var"],
         heading: ["Zapf Humanist"],
+        couch: ["couch"],
       },
       textColor: {
         blackish: "#191919",
