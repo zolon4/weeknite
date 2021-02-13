@@ -23,10 +23,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="h-screen w-screen bg-whiteish">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
-    </>
+    </div>
   )
 }
 

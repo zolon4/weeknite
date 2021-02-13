@@ -15,5 +15,5 @@
 
 html,
 body {
-  @apply font-body text-blackish bg-whiteish;
+  @apply font-body text-blackish;
 }

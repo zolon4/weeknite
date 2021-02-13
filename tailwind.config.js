@@ -10,7 +10,7 @@ module.exports = {
       textColor: {
         blackish: "#191919",
       },
-      backgroundColor: {
+      colors: {
         whiteish: "#FDFDFB",
       },
     },
